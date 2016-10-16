@@ -14,7 +14,10 @@
     }]);
     console.log(OneSignal);
     console.log(OneSignal.appId);
-    console.log(window.OneSignal);
+    OneSignal.push(["getRegistrationId", function(registrationId) {
+    console.log("OneSignal Registration ID:", registrationId);
+    // (Output) OneSignal Registration ID: cPMqRjFKn6U:APA91bGgr5-3ny36bQxBCA7uAoQIDsUtX6q7CL4FcsDiHlGgDh471C8cEktPYzTsO2OaOCeZmB0gLSSErzwM3fcZWI9LFkW8LEQzBVw7UbQ8NtlBF0dTADoYLF87xXSztUjAkFLP5_Vy
+    }]);
   </script>
 </head>
 <body>Welcome</body>
