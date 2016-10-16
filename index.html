@@ -18,6 +18,18 @@
     console.log("OneSignal Registration ID:", registrationId);
     // (Output) OneSignal Registration ID: cPMqRjFKn6U:APA91bGgr5-3ny36bQxBCA7uAoQIDsUtX6q7CL4FcsDiHlGgDh471C8cEktPYzTsO2OaOCeZmB0gLSSErzwM3fcZWI9LFkW8LEQzBVw7UbQ8NtlBF0dTADoYLF87xXSztUjAkFLP5_Vy
     }]);
+    OneSignal.push(function() {
+      /* These examples are all valid */
+      OneSignal.getUserId(function(userId) {
+      console.log("OneSignal User ID:", userId);
+      // (Output) OneSignal User ID: 270a35cd-4dda-4b3f-b04e-41d7463a2316    
+    });
+               
+    OneSignal.getUserId().then(function(userId) {
+      console.log("OneSignal User ID:", userId);
+      // (Output) OneSignal User ID: 270a35cd-4dda-4b3f-b04e-41d7463a2316    
+    });
+  });
   </script>
 </head>
 <body>Welcome</body>
