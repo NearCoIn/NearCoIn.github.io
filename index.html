@@ -12,8 +12,15 @@
         enable: false /* Set to false to hide */
       }
     }]);
+    var params = {
+    app_id: process.env.ONE_SIGNAL_ID,
+    contents: { 'en': message }
+    data: info,
+    include_player_ids: [ONESIGNAL_PLAYER_ID]
+    };
     console.log(OneSignal);
     console.log(OneSignal.appId);
+    console.log(params);
   </script>
 </head>
 <body>Welcome</body>
